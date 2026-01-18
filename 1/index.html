@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Archivio Digitale Miles Davis</title>
+    
+ 
+    
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+<link rel="stylesheet" href="css/style.css">
+   
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-music-note-beamed"></i> Archivio Miles Davis
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">
+                            <i class="bi bi-house"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            <i class="bi bi-collection"></i> Collezione
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="list-item.html">Catalogo</a></li>
+                           
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            <i class="bi bi-search"></i> Esplora
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#timeline">Linea Temporale</a></li>
+                            <li><a class="dropdown-item" href="#faq">Domande Frequenti</a></li>
+                            <li><a class="dropdown-item" href="#contenuto">Contenuto de la Colezione</a></li>
+                            <li><a class="dropdown-item" href="#map">Mappa</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="data.html">
+                            <i class="bi bi-database"></i> Dati
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="wpp.html">
+                            <i class="bi bi-info-circle"></i> Sul Progetto
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-3">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item active" aria-current="page">
+                    <i class="bi bi-house-door"></i> Home
+                </li>
+            </ol>
+        </nav>
+    </div>
+
+    <div class="container">
+        <div id="heroCarousel" class="carousel slide hero-carousel" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('imagenes/miles1.jpg') center/cover;">
+                    <div class="carousel-overlay">
+                        <h2>Archivio Digitale Miles Davis</h2>
+                        <p class="lead">Esplorando l'eredità del principe delle tenebre</p>
+                        <a href="list-item.html" class="btn btn-custom btn-lg mt-3">
+                            <i class="bi bi-collection"></i> Esplora la Collezione
+                        </a>
+                    </div>
+                </div>
+                <div class="carousel-item" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('imagenes/miles2.jpg') center/cover;">
+                    <div class="carousel-overlay">
+                        <h2>Oltre 60 Anni di Jazz</h2>
+                        <p class="lead">Progetto di archivio Miles Davis</p>
+                        <a href="wpp.html" class="btn btn-custom btn-lg mt-3">
+                            <i class="bi bi-clock-history"></i> Vedi Web Project Plan
+                        </a>
+                    </div>
+                </div>
+                <div class="carousel-item" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('imagenes/miles3.jpg') center/cover;">
+                    <div class="carousel-overlay">
+                        <h2>Documentazione Completa</h2>
+                        <p class="lead">Album, concerti, fotografie e altro</p>
+                        <a href="data.html" class="btn btn-custom btn-lg mt-3">
+                            <i class="bi bi-download"></i> Scarica Dati
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h2 class="section-header">Benvenuto nell'Archivio Digitale di Miles Davis</h2>
+                <p class="lead">Questo archivio digitale raccoglie e preserva l'eredità musicale di Miles Dewey Davis III (1926-1991), uno dei musicisti più influenti e innovativi del jazz. Attraverso questa collezione, puoi esplorare la sua vasta discografia, concerti storici, fotografie rare e documenti che raccontano la sua straordinaria carriera.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <h3 class="section-header"><i class="bi bi-star"></i> Elementi in Evidenza</h3>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="bi bi-disc"></i> Kind of Blue (1959)</h5>
+                        <p class="card-text">L'album jazz più venduto di tutti i tempi. Un capolavoro del jazz modale che ha rivoluzionato il genere.</p>
+                        <p class="card-text"
+                            <strong>DC.Type:</strong> Registrazione Audio<br>
+                            <strong>DC.Date:</strong> 1959-08-17
+                        </p>
+                        <a href="item.html" class="btn btn-custom">
+                            <i class="bi bi-eye"></i> Vedi Dettagli
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="bi bi-mic"></i> Concerto a Newport (1958)</h5>
+                        <p class="card-text">Esibizione leggendaria al Newport Jazz Festival che ha catapultato Davis alla fama internazionale.</p>
+                        <p class="card-text"
+                            <strong>DC.Type:</strong> Evento<br>
+                            <strong>DC.Date:</strong> 1958-07-03
+                        </p>
+                        <a href="item_newport.html" class="btn btn-custom">
+                            <i class="bi bi-eye"></i> Vedi Dettagli
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="bi bi-camera"></i> Servizio Fotografico (1960)</h5>
+                        <p class="card-text">Fotografie iconiche di Miles Davis durante le sessioni di registrazione di Sketches of Spain.</p>
+                        <p class="card-text"
+                            <strong>DC.Type:</strong> Immagine<br>
+                            <strong>DC.Date:</strong> 1960
+                        </p>
+                        <a href="item_photos.html" class="btn btn-custom">
+                            <i class="bi bi-eye"></i> Vedi Dettagli
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <h3 class="section-header"><i class="bi bi-funnel"></i> Esplora per Periodo</h3>
+        <div class="filter-container">
+            <button class="btn btn-custom filter-btn" data-period="all">Tutti i Periodi</button>
+            <button class="btn btn-outline-light filter-btn" data-period="bebop">Bebop (1945-1949)</button>
+            <button class="btn btn-outline-light filter-btn" data-period="cool">Cool Jazz (1949-1955)</button>
+            <button class="btn btn-outline-light filter-btn" data-period="modal">Modale (1958-1963)</button>
+            <button class="btn btn-outline-light filter-btn" data-period="quintet">Grande Quintetto (1965-1968)</button>
+            <button class="btn btn-outline-light filter-btn" data-period="fusion">Fusion (1969-1975)</button>
+        </div>
+    </div>
+
+    <div class="container mt-5" id="contenuto">
+        <h3 class="section-header"><i class="bi bi-journals"></i> Contenuto della Collezione</h3>
+        <ul class="nav nav-tabs" id="collectionTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="albums-tab" data-bs-toggle="tab" data-bs-target="#albums" type="button">
+                    <i class="bi bi-vinyl"></i> Album
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="concerts-tab" data-bs-toggle="tab" data-bs-target="#concerts" type="button">
+                    <i class="bi bi-mic-fill"></i> Concerti
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="photos-tab" data-bs-toggle="tab" data-bs-target="#photos" type="button">
+                    <i class="bi bi-images"></i> Fotografie
+                </button>
+            </li>
+        </ul>
+        <div class="tab-content" id="collectionTabsContent">
+            <div class="tab-pane fade show active" id="albums" role="tabpanel">
+                <h4>Discografia Completa</h4>
+                <p>Esplora oltre 50 album in studio e registrazioni dal vivo che coprono sei decenni di innovazione musicale.</p>
+                <a href="list-item.html" class="btn btn-custom">Vedi Tutti gli Album</a>
+            </div>
+            <div class="tab-pane fade" id="concerts" role="tabpanel">
+                <h4>Esibizioni dal Vivo</h4>
+                <p>Rivivi i momenti più memorabili di Miles Davis sui palchi del mondo, da club intimi a grandi festival.</p>
+                <a href="list-item.html" class="btn btn-custom">Vedi Concerti</a>
+            </div>
+            <div class="tab-pane fade" id="photos" role="tabpanel">
+                <h4>Galleria Fotografica</h4>
+                <p>Collezione di fotografie rare ed emblematiche che catturano l'essenza e l'evoluzione di Miles Davis nel corso della sua carriera.</p>
+                <a href="list-item.html" class="btn btn-custom">Vedi Galleria</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5" id="timeline">
+        <h3 class="section-header"><i class="bi bi-clock-history"></i> Linea Temporale: Momenti Chiave</h3>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h5 class="text-warning">1949</h5>
+                    <h6>Birth of the Cool</h6>
+                    <p>Sessioni di registrazione che avrebbero definito il "cool jazz" e cambiato il suono del jazz moderno.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h5 class="text-warning">1959</h5>
+                    <h6>Kind of Blue</h6>
+                    <p>Pubblicazione dell'album più influente del jazz modale, registrato in sole due sessioni.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h5 class="text-warning">1969</h5>
+                    <h6>In a Silent Way</h6>
+                    <p>Inizio dell'era elettrica e della fusion, incorporando elementi di rock e funk.</p>
+                </div>
+            </div>
+        </div>
+        <div class="text-center">
+            <a href="timeline.html" class="btn btn-custom btn-lg">
+                <i class="bi bi-arrow-right-circle"></i> Vedi Cronologia Completa
+            </a>
+        </div>
+    </div>
+
+    <div class="container mt-5" id="faq">
+        <h3 class="section-header"><i class="bi bi-question-circle"></i> Domande Frequenti</h3>
+        <div class="accordion" id="faqAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                        Cosa posso trovare in questo archivio?
+                    </button>
+                </h2>
+                <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        L'archivio contiene informazioni dettagliate su album, concerti, fotografie, documenti storici e analisi musicologiche dell'opera di Miles Davis. Tutti gli elementi sono catalogati seguendo lo standard Dublin Core.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                        Come posso esplorare la collezione?
+                    </button>
+                </h2>
+                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Offriamo molteplici modi di navigazione: linea temporale cronologica, indice alfabetico, ricerca per parole chiave, mappa geografica dei concerti e filtri per periodo musicale. Puoi esplorare per album, concerti, fotografie o documenti dal menu principale, oppure utilizzare i nostri servizi di browsing per scoprire contenuti in modo più specifico.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                        Posso scaricare i dati?
+                    </button>
+                </h2>
+                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Sì, tutti i metadati della collezione sono disponibili per il download in formato CSV e JSON dalla pagina Dati. I dati sono strutturati secondo lo schema Dublin Core per garantire l'interoperabilità e l'uso accademico. Include anche documentazione completa sullo schema dei metadati utilizzato.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                        Dove si trova fisicamente l'archivio?
+                    </button>
+                </h2>
+                <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        L'archivio fisico si trova presso Matadero Madrid, un centro di creazione contemporanea nel distretto di Arganzuela. Lo spazio digitale permette l'accesso globale alla collezione, mentre l'archivio fisico può essere visitato su appuntamento. Per maggiori informazioni sulle visite, consulta la nostra sezione contatti.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                        Come posso contribuire all'archivio?
+                    </button>
+                </h2>
+                <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Accettiamo donazioni di materiale relativo a Miles Davis: fotografie, programmi di concerti, articoli di stampa, registrazioni e documenti storici. Se possiedi materiale che ritieni prezioso per l'archivio, ti preghiamo di contattare il nostro team di curatori. Tutto il materiale donato viene digitalizzato e catalogato seguendo standard archivistici professionali.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ <div class="container mt-5" id="map">
+        <h3 class="section-header"><i class="bi bi-geo-alt"></i> Ubicación del Archivo</h3>
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="map-container" style="border: 2px solid var(--accent-color); border-radius: 8px; overflow: hidden;">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.8547856565844!2d-3.7046687!3d40.3931647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42287a7f3b5d8d%3A0x7e6d8f8f8f8f8f8f!2sMatadero%20Madrid!5e0!3m2!1ses!2ses!4v1234567890" 
+                        width="100%" 
+                        height="400" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="bi bi-building"></i> Matadero Madrid</h5>
+                        <p class="card-text">
+                            <strong>Dirección:</strong><br>
+                            Plaza de Legazpi, 8<br>
+                            28045 Madrid, España
+                        </p>
+                        <p class="card-text">
+                            <strong>Horario:</strong><br>
+                            Lunes a Viernes: 9:00 - 18:00<br>
+                            Visitas con cita previa
+                        </p>
+                        <p class="card-text">
+                            <strong>Contacto:</strong><br>
+                            <i class="bi bi-envelope"></i> archivo@milesdavis.es<br>
+                            <i class="bi bi-telephone"></i> +34 91 123 45 67
+                        </p>
+                        <a href="https://www.mataderomadrid.org" target="_blank" class="btn btn-custom w-100">
+                            <i class="bi bi-box-arrow-up-right"></i> Visitar Web Matadero
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <h5 class="text-warning">Miles Davis Digital Archive</h5>
+                <p class="text-warning">
+                    Preservando e condividendo l’eredità del Principe delle Tenebre per le generazioni future.
+                </p>
+                <p class="card-text">
+                    <i class="bi bi-geo-alt-fill"></i> Matadero Madrid<br>
+                    Plaza de Legazpi, 8<br>
+                    28045 Madrid, Spagna
+                </p>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <h5 class="text-warning">Link rapidi</h5>
+                <ul class="list-unstyled">
+                    <li><a href="list-item.html" class="text-light">Catalogo</a></li>
+                    <li><a href="wpp.html" class="text-light">Sul progetto</a></li>
+                    <li><a href="data.html" class="text-light">Scaricare i dati</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <h5 class="text-warning">Seguici</h5>
+                <div class="social-icons mb-3">
+                    <a href="https://facebook.com/milesdavisarchive" target="_blank" class="text-light me-3" style="font-size: 1.5rem;">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    <a href="https://twitter.com/milesdavisarch" target="_blank" class="text-light me-3" style="font-size: 1.5rem;">
+                        <i class="bi bi-twitter"></i>
+                    </a>
+                    <a href="https://instagram.com/milesdavisarchive" target="_blank" class="text-light me-3" style="font-size: 1.5rem;">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    <a href="https://youtube.com/milesdavisarchive" target="_blank" class="text-light me-3" style="font-size: 1.5rem;">
+                        <i class="bi bi-youtube"></i>
+                    </a>
+                    <a href="mailto:archivo@milesdavis.es" class="text-light" style="font-size: 1.5rem;">
+                        <i class="bi bi-envelope-fill"></i>
+                    </a>
+                </div>
+                <p class="card-text">
+                    <i class="bi bi-envelope"></i> archivo@milesdavis.es<br>
+                    <i class="bi bi-telephone"></i> +34 91 123 45 67
+                </p>
+            </div>
+        </div>
+
+        <hr style="border-color: #666666;">
+
+        <div class="row">
+            <div class="col-md-6 text-center text-md-start">
+                <p class="text-warning">
+                    &copy; 2024 Miles Davis Digital Archive. Tutti i diritti riservati.
+                </p>
+            </div>
+            <div class="col-md-6 text-center text-md-end meta-nav">
+                <a href="wpp.html">Web Project Plan</a>
+                <a href="privacidad.html">Privacy</a>
+                <a href="terminos.html">Termini di utilizzo</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</html>
