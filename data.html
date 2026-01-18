@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dati - Archivio Digitale Miles Davis</title>
+    
+  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-music-note-beamed"></i> Archivio Miles Davis
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            <i class="bi bi-house"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            <i class="bi bi-collection"></i> Collezione
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="list-item.html">Catalogo</a></li>
+                        </ul>
+                    </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            <i class="bi bi-search"></i> Esplora
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="index.html#timeline">Linea Temporale</a></li>
+                            <li><a class="dropdown-item" href="index.html#faq">Domande Frequenti</a></li>
+                            <li><a class="dropdown-item" href="index.html#contenuto">Contenuto de la Colezione</a></li>
+                            <li><a class="dropdown-item" href="index.html#map">Mappa</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="data.html">
+                            <i class="bi bi-database"></i> Dati
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="wpp.html">
+                            <i class="bi bi-info-circle"></i> Sul Progetto
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="container mt-3">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Dati</li>
+            </ol>
+        </nav>
+    </div>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-lg-10 mx-auto">
+                <h1 class="section-header"><i class="bi bi-database"></i> Dati della Collezione</h1>
+                <p class="lead">Visualizza e scarica i metadati completi dell'Archivio Digitale Miles Davis. Tutti i dati sono strutturati secondo lo standard Dublin Core.</p>
+            </div>
+        </div>
+    </div>
+
+  
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-10 mx-auto">
+                <h2 class="section-header"><i class="bi bi-bar-chart"></i> Statistiche della Collezione</h2>
+                <div class="row g-4">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="stats-card">
+                            <div class="stats-number">10</div>
+                            <p class="mb-0">Record Totali</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="stats-card">
+                            <div class="stats-number">4</div>
+                            <p class="mb-0">Album</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="stats-card">
+                            <div class="stats-number">2</div>
+                            <p class="mb-0">Concerti</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="stats-card">
+                            <div class="stats-number">4</div>
+                            <p class="mb-0">Fotografie & Doc.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-10 mx-auto">
+                <h2 class="section-header"><i class="bi bi-download"></i> Scarica i Dati</h2>
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-body text-center">
+                                <i class="bi bi-file-earmark-spreadsheet" style="font-size: 4rem; color: var(--accent-color);"></i>
+                                <h3 class="card-title mt-3">CSV</h3>
+                                <p class="text-muted small"><strong>Dimensione:</strong> ~3.2 KB | <strong>Records:</strong> 10</p>
+                                <a href="data/metadata.csv" download class="btn btn-custom btn-lg">
+                                    <i class="bi bi-download"></i> Scarica CSV
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-body text-center">
+                                <i class="bi bi-filetype-json" style="font-size: 4rem; color: var(--accent-color);"></i>
+                                <h3 class="card-title mt-3">JSON</h3>
+                                <p class="text-muted small"><strong>Dimensione:</strong> ~4.5 KB | <strong>Records:</strong> 10</p>
+                                <a href="data/metadata.json" download class="btn btn-custom btn-lg">
+                                    <i class="bi bi-download"></i> Scarica JSON
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="section-header"><i class="bi bi-table"></i> Visualizzazione Dati Completa</h2>
+                <div class="data-table-container">
+                    <table class="data-table table table-hover">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Filename</th>
+                                <th>Title</th>
+                                <th>Creator</th>
+                                <th>Date</th>
+                                <th>Description</th>
+                                <th>Subject</th>
+                                <th>Location</th>
+                                <th>Type</th>
+                                <th>Format</th>
+                                <th>Rights</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        
+                            <tr>
+                                <td><code>md001</code></td>
+                                <td class="data-cell-short">kindofblue.jpg</td>
+                                <td><strong>Kind of Blue</strong></td>
+                                <td>Miles Davis</td>
+                                <td>1959-08-17</td>
+                                <td class="data-cell-wrap">Album di jazz modale considerato uno dei più grandi di tutti i tempi. Registrato in due sessioni al Columbia 30th Street Studio.</td>
+                                <td class="data-cell-short">jazz modale; cool jazz; improvvisazione</td>
+                                <td>New York, USA</td>
+                                <td><span class="badge bg-warning text-dark">Image</span></td>
+                                <td><small>image/jpeg</small></td>
+                                <td class="data-cell-short">© Columbia Records 1959</td>
+                            </tr>
+                            
+                    
+                            <tr>
+                                <td><code>md002</code></td>
+                                <td class="data-cell-short">sketchesofspain.jpg</td>
+                                <td><strong>Sketches of Spain</strong></td>
+                                <td>Miles Davis & Gil Evans</td>
+                                <td>1960-03-10</td>
+                                <td class="data-cell-wrap">Collaborazione orchestrale che fonde jazz e musica classica spagnola. Arrangiamenti di Gil Evans basati su temi di Rodrigo.</td>
+                                <td class="data-cell-short">jazz; fusion; orchestra; spagna</td>
+                                <td>New York, USA</td>
+                                <td><span class="badge bg-warning text-dark">Image</span></td>
+                                <td><small>image/jpeg</small></td>
+                                <td class="data-cell-short">© Columbia Records 1960</td>
+                            </tr>
+                       ¡
+                            <tr>
+                                <td><code>md003</code></td>
+                                <td class="data-cell-short">bitchesbrew.jpg</td>
+                                <td><strong>Bitches Brew</strong></td>
+                                <td>Miles Davis</td>
+                                <td>1970-08-19</td>
+                                <td class="data-cell-wrap">Album rivoluzionario che ha creato il genere jazz fusion. Sessioni con oltre 12 musicisti che hanno ridefinito il suono del jazz.</td>
+                                <td class="data-cell-short">fusion; jazz rock; elettrico</td>
+                                <td>New York, USA</td>
+                                <td><span class="badge bg-warning text-dark">Image</span></td>
+                                <td><small>image/jpeg</small></td>
+                                <td class="data-cell-short">© Columbia Records 1970</td>
+                            </tr>
+                     
+                            <tr>
+                                <td><code>md004</code></td>
+                                <td class="data-cell-short">newport1958.jpg</td>
+                                <td><strong>Newport Jazz Festival 1958</strong></td>
+                                <td>Miles Davis Quintet</td>
+                                <td>1958-07-03</td>
+                                <td class="data-cell-wrap">Esibizione leggendaria che lanciò Miles Davis alla fama internazionale. Performance elettrizzante di Ah-Leu-Cha.</td>
+                                <td class="data-cell-short">jazz; festival; live; leggendario</td>
+                                <td>Newport, Rhode Island, USA</td>
+                                <td><span class="badge bg-info text-dark">Image</span></td>
+                                <td><small>image/jpeg</small></td>
+                                <td class="data-cell-short">Public Domain</td>
+                            </tr>
+                            
+                        
+                            <tr>
+                                <td><code>md005</code></td>
+                                <td class="data-cell-short">hunstein_kindofblue.jpg</td>
+                                <td><strong>Sessione Kind of Blue</strong></td>
+                                <td>Don Hunstein</td>
+                                <td>1959-03-02</td>
+                                <td class="data-cell-wrap">Fotografie iconiche della sessione di registrazione di Kind of Blue. Immagini in bianco e nero dei musicisti al lavoro.</td>
+                                <td class="data-cell-short">fotografia; studio; sessione</td>
+                                <td>New York, USA</td>
+                                <td><span class="badge bg-success text-dark">Image</span></td>
+                                <td><small>image/jpeg</small></td>
+                                <td class="data-cell-short">© Don Hunstein 1959</td>
+                            </tr>
+                            
+                       
+                            <tr>
+                                <td><code>md006</code></td>
+                                <td class="data-cell-short">penn_portrait.jpg</td>
+                                <td><strong>Ritratto con Tromba</strong></td>
+                                <td>Irving Penn</td>
+                                <td>1950-06-15</td>
+                                <td class="data-cell-wrap">Celebre ritratto di Miles Davis giovane con la sua tromba. Fotografia d'autore in bianco e nero.</td>
+                                <td class="data-cell-short">ritratto; fotografia; artistico</td>
+                                <td>New York, USA</td>
+                                <td><span class="badge bg-success text-dark">Image</span></td>
+                                <td><small>image/jpeg</small></td>
+                                <td class="data-cell-short">© Irving Penn 1950</td>
+                            </tr>
+                            
+                        
+                            <tr>
+                                <td><code>md007</code></td>
+                                <td class="data-cell-short">contract_columbia_1955.pdf</td>
+                                <td><strong>Contratto Columbia Records</strong></td>
+                                <td>Miles Davis</td>
+                                <td>1955-11-12</td>
+                                <td class="data-cell-wrap">Contratto originale firmato con Columbia Records che segnò l'inizio della sua fase più produttiva.</td>
+                                <td class="data-cell-short">contratto; documento legale</td>
+                                <td>New York, USA</td>
+                                <td><span class="badge bg-danger text-dark">Text</span></td>
+                                <td><small>application/pdf</small></td>
+                                <td class="data-cell-short">© Columbia Records 1955</td>
+                            </tr>
+                            
+                      
+                            <tr>
+                                <td><code>md008</code></td>
+                                <td class="data-cell-short">sowhat_manuscript.pdf</td>
+                                <td><strong>Spartito So What</strong></td>
+                                <td>Miles Davis</td>
+                                <td>1959-02-01</td>
+                                <td class="data-cell-wrap">Spartito manoscritto originale della composizione So What da Kind of Blue. Include note e annotazioni personali.</td>
+                                <td class="data-cell-short">spartito; manoscritto; composizione</td>
+                                <td>New York, USA</td>
+                                <td><span class="badge bg-danger text-dark">Text</span></td>
+                                <td><small>application/pdf</small></td>
+                                <td class="data-cell-short">© Miles Davis Estate 1959</td>
+                            </tr>
+                            
+                            
+                            <tr>
+                                <td><code>md009</code></td>
+                                <td class="data-cell-short">carnegie1961.jpg</td>
+                                <td><strong>Carnegie Hall 1961</strong></td>
+                                <td>Miles Davis & Gil Evans</td>
+                                <td>1961-05-19</td>
+                                <td class="data-cell-wrap">Concerto storico alla Carnegie Hall con orchestra diretta da Gil Evans. Repertorio da Sketches of Spain.</td>
+                                <td class="data-cell-short">jazz; orchestra; live; storico</td>
+                                <td>New York, USA</td>
+                                <td><span class="badge bg-info text-dark">Image</span></td>
+                                <td><small>image/jpeg</small></td>
+                                <td class="data-cell-short">© Carnegie Hall 1961</td>
+                            </tr>
+                            
+                          
+                            <tr>
+                                <td><code>md010</code></td>
+                                <td class="data-cell-short">birthcool.jpg</td>
+                                <td><strong>Birth of the Cool</strong></td>
+                                <td>Miles Davis Nonet</td>
+                                <td>1957-01-15</td>
+                                <td class="data-cell-wrap">Compilation delle innovative sessioni del 1949-1950 che hanno definito il cool jazz. Arrangiamenti di Gil Evans e Gerry Mulligan.</td>
+                                <td class="data-cell-short">cool jazz; bebop; nonet</td>
+                                <td>Los Angeles, USA</td>
+                                <td><span class="badge bg-warning text-dark">Image</span></td>
+                                <td><small>image/jpeg</small></td>
+                                <td class="data-cell-short">© Capitol Records 1957</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <h5 class="text-warning">Miles Davis Digital Archive</h5>
+                <p class="text-warning">
+                    Preservando e condividendo l’eredità del Principe delle Tenebre per le generazioni future.
+                </p>
+                <p class="card-text">
+                    <i class="bi bi-geo-alt-fill"></i> Matadero Madrid<br>
+                    Plaza de Legazpi, 8<br>
+                    28045 Madrid, Spagna
+                </p>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <h5 class="text-warning">Link rapidi</h5>
+                <ul class="list-unstyled">
+                    <li><a href="list-item.html" class="text-light">Catalogo</a></li>
+                    <li><a href="wpp.html" class="text-light">Sul progetto</a></li>
+                    <li><a href="data.html" class="text-light">Scaricare i dati</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <h5 class="text-warning">Seguici</h5>
+                <div class="social-icons mb-3">
+                    <a href="https://facebook.com/milesdavisarchive" target="_blank" class="text-light me-3" style="font-size: 1.5rem;">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    <a href="https://twitter.com/milesdavisarch" target="_blank" class="text-light me-3" style="font-size: 1.5rem;">
+                        <i class="bi bi-twitter"></i>
+                    </a>
+                    <a href="https://instagram.com/milesdavisarchive" target="_blank" class="text-light me-3" style="font-size: 1.5rem;">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    <a href="https://youtube.com/milesdavisarchive" target="_blank" class="text-light me-3" style="font-size: 1.5rem;">
+                        <i class="bi bi-youtube"></i>
+                    </a>
+                    <a href="mailto:archivo@milesdavis.es" class="text-light" style="font-size: 1.5rem;">
+                        <i class="bi bi-envelope-fill"></i>
+                    </a>
+                </div>
+                <p class="card-text">
+                    <i class="bi bi-envelope"></i> archivo@milesdavis.es<br>
+                    <i class="bi bi-telephone"></i> +34 91 123 45 67
+                </p>
+            </div>
+        </div>
+
+        <hr style="border-color: #666666;">
+
+        <div class="row">
+            <div class="col-md-6 text-center text-md-start">
+                <p class="text-warning">
+                    &copy; 2024 Miles Davis Digital Archive. Tutti i diritti riservati.
+                </p>
+            </div>
+            <div class="col-md-6 text-center text-md-end meta-nav">
+                <a href="wpp.html">Web Project Plan</a>
+                <a href="privacidad.html">Privacy</a>
+                <a href="terminos.html">Termini di utilizzo</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+ 
+    <script src="js/main.js"></script>
+</body>
+</html>
